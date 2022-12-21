@@ -8,7 +8,7 @@ url = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2
       "&f=1&nofb=1&ipt=fb9279e17f046cf240011cbb1ee03ee33adf1c7ff5574e62035d006c270cbf6b&ipo=images "
 
 
-# gets the URL and defines image_spam
+# gets the URL image and defines image_spam
 def image_spam():
     response = requests.get(url)
     img = Image.open(BytesIO(response.content))
